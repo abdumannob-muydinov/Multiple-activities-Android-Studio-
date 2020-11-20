@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">homework1</string>
+    <string name="you_need_to_earn_tl">You Need to Earn(TL):</string>
+    <string name="about_istanbul_nfirst_inhabitants_of_istanbul_are_dating_back_to_second_millennia_bc_they_were_settled_on_the_asian_side_of_the_city_its_first_name_comes_from_megara_king_byzas_who_took_his_colonists_here_in_the_7th_century_bc_to_establish_a_colony_named_byzantium_the_greek_name_for_a_city_on_the_bosphorus">About Istanbul \nFirst inhabitants of Istanbul are dating back to second millennia BC, they were settled on the Asian side of the city. Its first name comes from Megara king Byzas who took his colonists here in the 7th century BC to establish a colony named Byzantium, the Greek name for a city on the Bosphorus.</string>
+    <string name="next">NEXT</string>
+    <string name="aug">AUGSBURG</string>
+    <string name="ist">ISTANBUL</string>
+    <string name="sam">SAMARKAND</string>
+    <string name="btngo">Select</string>
+</resources>

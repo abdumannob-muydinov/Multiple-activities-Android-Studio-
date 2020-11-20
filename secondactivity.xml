@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="303dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Need to Earn($): "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:background="@android:color/holo_blue_light"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Augsburg can trace its history back way beyond the medieval heyday of its neighbours on the Romantic Road.Founded before the period of Roman control, it was dubbed Augusta Vindelicorum when they gained power in the region and built the trade route stretching between northern Italy and their new powerbase in southern Germany." />
+
+    </LinearLayout>
+<!--
+/*it asked for content description I had to use these strings*/
+-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aug1"
+            android:contentDescription="@string/about_istanbul_nfirst_inhabitants_of_istanbul_are_dating_back_to_second_millennia_bc_they_were_settled_on_the_asian_side_of_the_city_its_first_name_comes_from_megara_king_byzas_who_took_his_colonists_here_in_the_7th_century_bc_to_establish_a_colony_named_byzantium_the_greek_name_for_a_city_on_the_bosphorus" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aug2"
+            android:contentDescription="@string/about_istanbul_nfirst_inhabitants_of_istanbul_are_dating_back_to_second_millennia_bc_they_were_settled_on_the_asian_side_of_the_city_its_first_name_comes_from_megara_king_byzas_who_took_his_colonists_here_in_the_7th_century_bc_to_establish_a_colony_named_byzantium_the_greek_name_for_a_city_on_the_bosphorus" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aug3"
+            android:contentDescription="@string/about_istanbul_nfirst_inhabitants_of_istanbul_are_dating_back_to_second_millennia_bc_they_were_settled_on_the_asian_side_of_the_city_its_first_name_comes_from_megara_king_byzas_who_took_his_colonists_here_in_the_7th_century_bc_to_establish_a_colony_named_byzantium_the_greek_name_for_a_city_on_the_bosphorus" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="200dp"
+        android:onClick="onClick"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="341dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="76dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:max="100"
+            android:min="10"
+            android:progress="40"
+                android:thumb="@drawable/custom_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
